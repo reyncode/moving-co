@@ -1,7 +1,7 @@
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
-    lightText: false,
+    lightText: true,
     lightTextDesc: true,
     topLine: 'About Us',
     headline: 'A Nova Scotia local moving co-ordinator',
@@ -12,5 +12,5 @@ export const homeObjOne = {
     alt: 'standing',
     dark: true,
     primary: true,
-    darkText: true
+    darkText: false
 };
