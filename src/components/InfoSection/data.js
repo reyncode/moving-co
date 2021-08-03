@@ -1,7 +1,7 @@
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
-    lightText: true,
+    lightText: false,
     lightTextDesc: true,
     topLine: 'Change This',
     headline: 'Depends on which section',
@@ -12,5 +12,5 @@ export const homeObjOne = {
     alt: 'standing',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: true
 };
