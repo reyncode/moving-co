@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
+    padding: 0 15px;
     max-width:: 1100px;
 `;
 
@@ -34,7 +34,7 @@ export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
@@ -62,7 +62,8 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    // margin-right: -24px;
+    margin-left: -55px;
 
     @media screen and (max-width: 768px) {
         display: none;
