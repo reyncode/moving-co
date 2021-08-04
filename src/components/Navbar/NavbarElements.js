@@ -82,8 +82,6 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
-    /* Nav link highlighting effect */
-
     &.active {
         border-bottom: 3px solid #de6464;
     }
