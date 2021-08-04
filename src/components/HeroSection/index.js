@@ -29,7 +29,7 @@ const HeroSection = () => {
                 <HeroH1>Moving simplified</HeroH1>
                 <HeroP>Let us help you with your next move.</HeroP>
                 <HeroBtnWrapper>
-                    <Button to='services'
+                    <Button to='about'
                         smooth={true}
                         duration={500}
                         spy={true}
@@ -39,7 +39,7 @@ const HeroSection = () => {
                         onMouseLeave={onHover}
                         primary='true'
                         dark='true'>
-                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                        Learn more {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

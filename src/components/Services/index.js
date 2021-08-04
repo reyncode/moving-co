@@ -15,22 +15,22 @@ import Icon3 from '../../images/svg-4.svg'
 const Services = () => {
     return (
         <ServicesContainer id='services'>
-            <ServicesH1>Delivery Options</ServicesH1>
+            <ServicesH1>Transportation Options</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
-                    <ServicesIcon src={Icon1} />
-                    <ServicesH2>Long Delivery</ServicesH2>
-                    <ServicesP>We can move your things across the province.</ServicesP>
+                    <ServicesIcon src={Icon2} />
+                    <ServicesH2>Express</ServicesH2>
+                    <ServicesP>Same-day transportation for orders booked at least 4 hours prior to the pickup time, and next-day transportation for orders booked anytime the day prior.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Icon2} />
-                    <ServicesH2>Local Delivery</ServicesH2>
-                    <ServicesP>We can move your things in the community.</ServicesP>
+                    <ServicesIcon src={Icon1} />
+                    <ServicesH2>Scheduled</ServicesH2>
+                    <ServicesP>Transportation that can be booked up to 30 days in advance.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesH2>Moving Help</ServicesH2>
-                    <ServicesP>We can lend an extra hand with your move in.</ServicesP>
+                    <ServicesH2>Short- and long-haul</ServicesH2>
+                    <ServicesP>Short-haul transportation within the HRM, and up to 150 km outside in either direction. Long-haul transportation is province-wide, exceeding 150km. </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>
