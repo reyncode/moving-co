@@ -60,9 +60,6 @@ const Navbar = ({ toggle }) => {
                                 offset={-80}
                             >Services</NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to='feedback'>Feedback</NavLinks>
-                        </NavItem>
                     </NavMenu>
                     <NavBtn>
                         <NavBtnLink to='/contact'>Contact</NavBtnLink>
