@@ -1,4 +1,4 @@
-export const homeObjOne = {
+export const aboutObject = {
     id: 'about',
     lightBg: false,
     lightText: true,
