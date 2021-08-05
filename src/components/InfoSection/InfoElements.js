@@ -40,7 +40,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 35px;
     grid-area: col2;
 `
 
@@ -74,9 +74,9 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 28px;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `
 
