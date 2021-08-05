@@ -41,7 +41,7 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon4} />
                     <ServicesH2>Long-haul</ServicesH2>
-                    <ServicesP>Long-haul transportation is province-wide, exceeding 150km. </ServicesP>
+                    <ServicesP>Long-haul transportation is province-wide, exceeding 150km from origin. </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>
