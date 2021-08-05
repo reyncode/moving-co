@@ -35,5 +35,5 @@ export const accommodationObject = {
     dark: true,
     primary: true,
     darkText: false,
-    linkTo: 'services'
+    linkTo: 'solutions'
 };
