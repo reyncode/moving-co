@@ -59,11 +59,20 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
     font-size: 3rem;
     color: #fff;
-    margin-bottom: 64px;
+    margin-bottom: 34px;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
     }
+`
+export const ServicesCategory = styled.p`
+    font-size: 1.5rem;
+    color: #de6464;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
 `
 
 export const ServicesH2 = styled.h2`

@@ -6,28 +6,33 @@ import {
     ServicesCard,
     ServicesIcon,
     ServicesH2,
-    ServicesP
+    ServicesP,
+    ServicesCategory
 } from './ServicesElements'
-import Icon1 from '../../images/svg-2.svg'
-import Icon2 from '../../images/svg-3.svg'
-import Icon3 from '../../images/svg-4.svg'
-import Icon4 from '../../images/svg-5.svg'
+import Icon1 from '../../images/drone-delivery.svg'
+import Icon2 from '../../images/schedule-delivery.svg'
+import Icon3 from '../../images/short-haul.svg'
+import Icon4 from '../../images/long-haul.svg'
 
 const Services = () => {
     return (
         <ServicesContainer id='solutions'>
             <ServicesH1>Solutions</ServicesH1>
+            <ServicesCategory>How fast?</ServicesCategory>
             <ServicesWrapper>
                 <ServicesCard>
-                    <ServicesIcon src={Icon2} />
+                    <ServicesIcon src={Icon1} />
                     <ServicesH2>Express</ServicesH2>
                     <ServicesP>Same-day transportation for orders booked at least 4 hours prior to the pickup time.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Icon1} />
+                    <ServicesIcon src={Icon2} />
                     <ServicesH2>Scheduled</ServicesH2>
                     <ServicesP>Scheduled transportation that can be booked up to 30 days in advance.</ServicesP>
                 </ServicesCard>
+            </ServicesWrapper>
+            <ServicesCategory>How far?</ServicesCategory>
+            <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
                     <ServicesH2>Short-haul</ServicesH2>
