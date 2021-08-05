@@ -42,6 +42,10 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 35px;
     grid-area: col2;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -78,11 +82,18 @@ export const Subtitle = styled.p`
     font-size: 16px;
     line-height: 28px;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+
+    @media screen and (max-width: 480px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    padding-top: 15px;
 `
 
 export const ImgWrap = styled.div`
