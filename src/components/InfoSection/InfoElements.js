@@ -43,9 +43,9 @@ export const Column2 = styled.div`
     padding: 0 35px;
     grid-area: col2;
 
-    @media screen and (max-width: 480px) {
-        display: none;
-    }
+    // @media screen and (max-width: 480px) {
+    //     display: none;
+    // }
 `
 
 export const TextWrapper = styled.div`
