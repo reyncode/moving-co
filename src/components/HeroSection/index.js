@@ -26,8 +26,8 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Moving simplified</HeroH1>
-                <HeroP>Let us help you with your next move.</HeroP>
+                <HeroH1>From here to there</HeroH1>
+                <HeroP>Let us give you a hand.</HeroP>
                 <HeroBtnWrapper>
                     <Button to='about'
                         smooth={true}
