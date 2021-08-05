@@ -23,7 +23,11 @@ const InfoSection = ({
     lightText,
     headline,
     darkText,
-    description,
+    description1,
+    description2,
+    description3,
+    description4,
+    description5,
     buttonLabel,
     img,
     alt,
@@ -41,7 +45,11 @@ const InfoSection = ({
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <Subtitle darkText={darkText}>{description1}</Subtitle>
+                                <Subtitle darkText={darkText}>{description2}</Subtitle>
+                                <Subtitle darkText={darkText}>{description3}</Subtitle>
+                                <Subtitle darkText={darkText}>{description4}</Subtitle>
+                                <Subtitle darkText={darkText}>{description5}</Subtitle>
                                 <BtnWrap>
                                     <Button to={linkTo}
                                         smooth={true}
