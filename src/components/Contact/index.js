@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../ButtonElements'
 import {
     ContactContainer,
     ContactWrapper,
@@ -8,11 +9,11 @@ import {
     ContactH1,
     ContactName,
     ContactEmail,
-    ContactSubject,
     ContactMessage,
     Column2,
     ImgWrap,
-    Img
+    Img,
+    BtnWrap
 } from './ContactElements'
 
 const Contact = ({
@@ -21,7 +22,10 @@ const Contact = ({
     imgStart,
     headline,
     img,
-    alt
+    alt,
+    buttonLabel,
+    primary,
+    dark
 }) => {
     return (
         <ContactContainer lightBg={lightBg} id={id}>
@@ -32,8 +36,14 @@ const Contact = ({
                             <ContactH1>{headline}</ContactH1>
                             <ContactName type='text' id='name' placeholder='Full Name' />
                             <ContactEmail type='email' id='email' placeholder='Email' />
-                            <ContactSubject type='subject' id='subject' placeholder='Subject' />
-                            <ContactMessage type='message' placeholder='message' cols='30' rows='10' />
+                            <ContactMessage type='message' placeholder='Message' cols='30' rows='10' />
+                            <BtnWrap>
+                                <Button
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                >{buttonLabel}
+                                </Button>
+                            </BtnWrap>
                         </ContactForm>
                     </Column1>
                     <Column2>

@@ -41,10 +41,11 @@ export const accommodationObject = {
 export const contactObject = {
     id: 'contact',
     lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
     headline: 'Contact Us',
     imgStart: true,
     img: require('../../images/email.svg').default,
     alt: 'email',
+    buttonLabel: 'Submit',
+    dark: true,
+    primary: true
 };

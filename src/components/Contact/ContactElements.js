@@ -15,7 +15,6 @@ export const ContactWrapper = styled.div`
     height: 100vh;
     width: 100%;
     max-width: 1100px;
-    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -70,35 +69,33 @@ export const ContactH1 = styled.h1`
 `
 
 export const ContactName = styled.input`
+    color: #fff;
+    background: transparent;
     width: 100%;
     height: 2rem;
     margin-top: 2rem;
     border: none;
-    // border-bottom: 1px solid #000;
+    border-bottom: 1px solid #f9f9f9;
 `
 
 export const ContactEmail = styled.input`
+    color: #fff;    
+    background: transparent;
     width: 100%;
     height: 2rem;
     margin-top: 2rem;
     border: none;
-    border-bottom: 1px solid #000;
-`
-
-export const ContactSubject = styled.input`
-    width: 100%;
-    height: 2rem;
-    margin-top: 2rem;
-    border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #f9f9f9;
 `
 
 export const ContactMessage = styled.input`
+    color: #fff;
+    background: transparent;    
     width: 100%;
     height: 2rem;
     margin-top: 2rem;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #f9f9f9;
 `
 
 export const ImgWrap = styled.div`
@@ -110,4 +107,10 @@ export const Img = styled.img`
     width: 80%;
     margin: 0 0 10px 0;
     padding-right: 0;
+`
+
+export const BtnWrap = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 15px;
 `
