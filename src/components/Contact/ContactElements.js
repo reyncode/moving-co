@@ -15,6 +15,7 @@ export const ContactWrapper = styled.div`
     height: 100vh;
     width: 100%;
     max-width: 1100px;
+    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -33,9 +34,13 @@ export const ContactRow = styled.div`
 `
 
 export const Column1 = styled.div`
+    display: grid;
+    grid-auto-rows: minmax(auto, 1fr);
+    align-items: center; 
+
     margin-bottom: 15px;
     padding: 0 15px;
-    grid-area: col1;
+    // grid-area: col1;
 `
 
 export const Column2 = styled.div`
@@ -49,44 +54,48 @@ export const Column2 = styled.div`
 `
 
 export const ContactForm = styled.form`
-    // position: absolute;
-    // top: 10%;
-    // left: 10%;
-    // width: 80%;
-    // height: 600px;
-
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const ContactH1 = styled.h1`
-    font-size: 2rem;
+    font-size: 3rem;
+    
 `
 
 export const ContactName = styled.input`
-    width: 100%
+    width: 100%;
+    height: 2rem;
     margin-top: 2rem;
     border: none;
-    border-bottom: 1px solid #000;
+    // border-bottom: 1px solid #000;
 `
 
 export const ContactEmail = styled.input`
-    width: 100%
+    width: 100%;
+    height: 2rem;
     margin-top: 2rem;
     border: none;
     border-bottom: 1px solid #000;
 `
 
 export const ContactSubject = styled.input`
-    width: 100%
+    width: 100%;
+    height: 2rem;
     margin-top: 2rem;
     border: none;
     border-bottom: 1px solid #000;
 `
 
 export const ContactMessage = styled.input`
-    width: 100%
+    width: 100%;
+    height: 2rem;
     margin-top: 2rem;
     border: none;
     border-bottom: 1px solid #000;
@@ -98,7 +107,7 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 80%;
     margin: 0 0 10px 0;
     padding-right: 0;
 `
