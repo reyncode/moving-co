@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 import FormSignup from './FormSignup';
 import FormSuccess from './FormSuccess';
-import Icon from '../../images/long-haul.svg'
+// import Icon from '../../images/long-haul.svg'
 
 const Form = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);

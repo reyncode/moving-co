@@ -13,8 +13,7 @@ const FormSignup = ({ submitForm }) => {
         <div className='form-content-right'>
             <form onSubmit={handleSubmit} className='form' noValidate>
                 <h1>
-                    Get started with us today! Create your account by filling out the
-                    information below.
+                    Send us a message below and we will get back to you as soon as possible!
                 </h1>
                 <div className='form-inputs'>
                     <label className='form-label'>Full Name</label>
@@ -40,19 +39,21 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.email && <p>{errors.email}</p>}
                 </div>
+
                 <div className='form-inputs'>
-                    <label className='form-label'>Password</label>
+                    <label className='form-label'>Message</label>
                     <input
-                        className='form-input'
-                        type='password'
-                        name='password'
-                        placeholder='Enter your password'
-                        value={values.password}
+                        className='form-input-message'
+                        type='message'
+                        name='message'
+                        // placeholder='Enter your message'
+                        value={values.message}
                         onChange={handleChange}
                     />
-                    {errors.password && <p>{errors.password}</p>}
+                    {errors.message && <p>{errors.message}</p>}
                 </div>
-                <div className='form-inputs'>
+
+                {/* <div className='form-inputs'>
                     <label className='form-label'>Confirm Password</label>
                     <input
                         className='form-input'
@@ -63,9 +64,9 @@ const FormSignup = ({ submitForm }) => {
                         onChange={handleChange}
                     />
                     {errors.password2 && <p>{errors.password2}</p>}
-                </div>
+                </div> */}
                 <button className='form-input-btn' type='submit'>
-                    Sign up
+                    Send
                 </button>
                 {/* <span className='form-input-login'>
                     Already have an account? Login <a href='#'>here</a>

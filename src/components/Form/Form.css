@@ -82,7 +82,7 @@
   
   .form h1 {
     font-size: 1rem;
-    text-align: start;
+    text-align: center;
     width: 80%;
     margin-bottom: 1rem;
     color: #fff;
@@ -112,6 +112,16 @@
     outline: none;
     border-radius: 2px;
     height: 40px;
+    width: 100%;
+    border: none;
+  }
+
+  .form-input-message {
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 80px;
     width: 100%;
     border: none;
   }
