@@ -1,4 +1,5 @@
 import React from 'react';
+// import emailjs from 'emailjs-com'
 import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
@@ -9,11 +10,22 @@ const FormSignup = ({ submitForm }) => {
         validate
     );
 
+    // function sendEmail(e) {
+    //     e.preventDefault();
+
+    //     emailjs.sendForm('gmail', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
+    //         .then((result) => {
+    //             console.log(result.text);
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    // }
+
     return (
         <div className='form-content-right'>
             <form onSubmit={handleSubmit} className='form' noValidate>
                 <h1>
-                    Send us a message below and we will get back to you as soon as possible!
+                    Send us a message and we will get back to you as soon as possible!
                 </h1>
                 <div className='form-inputs'>
                     <label className='form-label'>Full Name</label>
@@ -42,7 +54,7 @@ const FormSignup = ({ submitForm }) => {
 
                 <div className='form-inputs'>
                     <label className='form-label'>Message</label>
-                    <input
+                    <textarea
                         className='form-input-message'
                         type='message'
                         name='message'
