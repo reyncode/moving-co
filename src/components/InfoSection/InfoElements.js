@@ -7,6 +7,10 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
+
+    @media screen and (max-width: 360px) {
+        padding: 80px 0;
+    }
 `
 
 export const InfoWrapper = styled.div`
@@ -94,6 +98,10 @@ export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
     padding-top: 15px;
+
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+    }
 `
 
 export const ImgWrap = styled.div`
@@ -105,4 +113,8 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media screen and (max-width: 360px) {
+        display: none;
+    }
 `
