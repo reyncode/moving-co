@@ -5,7 +5,6 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { aboutObject, accommodationObject } from '../components/InfoSection/data';
 import Services from '../components/Services';
-// import Contact from '../components/Contact';
 import Form from '../components/Form/Form';
 
 const Home = () => {
@@ -23,7 +22,6 @@ const Home = () => {
             <InfoSection {...aboutObject} />
             <InfoSection {...accommodationObject} />
             <Services />
-            {/* <Contact /> */}
             <Form />
         </>
     )
