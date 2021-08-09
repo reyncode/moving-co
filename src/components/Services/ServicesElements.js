@@ -9,7 +9,7 @@ export const ServicesContainer = styled.div`
     background: #010606;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 1600px;
     }
 
     @media screen and (max-width: 480px) {
@@ -38,7 +38,8 @@ export const ServicesCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 300px;
+    max-width: 728px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
