@@ -13,12 +13,13 @@ const FormSignup = ({ submitForm }) => {
     // function sendEmail(e) {
     //     e.preventDefault();
 
-    //     emailjs.sendForm('gmail', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
+    //     emailjs.sendForm('service_5768qct', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
     //         .then((result) => {
     //             console.log(result.text);
     //         }, (error) => {
     //             console.log(error.text);
     //         });
+    //     e.target.reset()
     // }
 
     return (
@@ -43,7 +44,7 @@ const FormSignup = ({ submitForm }) => {
                     <label className='form-label'>Email</label>
                     <input
                         className='form-input'
-                        type='email'
+                        type='text'
                         name='email'
                         placeholder='Enter your email'
                         value={values.email}
@@ -56,7 +57,7 @@ const FormSignup = ({ submitForm }) => {
                     <label className='form-label'>Message</label>
                     <textarea
                         className='form-input-message'
-                        type='message'
+                        type='text'
                         name='message'
                         // placeholder='Enter your message'
                         value={values.message}

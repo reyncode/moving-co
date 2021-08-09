@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com'
 
 const useForm = (callback, validate) => {
     const [values, setValues] = useState({
@@ -7,7 +8,9 @@ const useForm = (callback, validate) => {
         message: ''
         // password2: ''
     });
+
     const [errors, setErrors] = useState({});
+
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = e => {
@@ -23,6 +26,13 @@ const useForm = (callback, validate) => {
 
         setErrors(validate(values));
         setIsSubmitting(true);
+
+        emailjs.sendForm('service_5768qct', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     useEffect(

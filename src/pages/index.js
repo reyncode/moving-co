@@ -23,7 +23,7 @@ const Home = () => {
             <InfoSection {...aboutObject} />
             <InfoSection {...accommodationObject} />
             <Services />
-            {/* <Contact {...contactObject} /> */}
+            {/* <Contact /> */}
             <Form />
         </>
     )
