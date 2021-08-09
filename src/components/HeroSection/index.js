@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Video from '../../videos/taping-box2.mp4'
+// import Video from '../../videos/taping-box2.mp4'
 import {
     HeroContainer,
     HeroBg,
-    VideoBg,
+    // VideoBg,
     HeroContent,
     HeroH1,
     HeroP,
@@ -23,7 +23,7 @@ const HeroSection = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </HeroBg>
             <HeroContent>
                 <HeroH1>From here to there</HeroH1>
