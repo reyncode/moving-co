@@ -21,10 +21,10 @@ const useForm = (callback, validate) => {
         });
     };
 
-    const handleClick = e => {
+    function handleClick() {
         setErrors(validate(values));
         setIsSubmitting(true);
-    };
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -48,7 +48,7 @@ const useForm = (callback, validate) => {
                 }
             }
         },
-        [errors]
+        [errors, isSubmitting]
     );
 
     return { handleChange, handleSubmit, values, errors, handleClick };
