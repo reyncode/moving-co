@@ -12,16 +12,6 @@ const useForm = (callback, validate) => {
     const [send, setSend] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    // useEffect(
-    //     () => {
-    //         if (Object.keys(errors).length === 0 && isSubmitting) {
-    //             setSend(true);
-    //             callback();
-    //         }
-    //     },
-    //     [errors]
-    // );
-
     const handleChange = e => {
 
         const { name, value } = e.target;
@@ -34,9 +24,7 @@ const useForm = (callback, validate) => {
     const handleClick = e => {
         setErrors(validate(values));
         setIsSubmitting(true);
-
     };
-
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -60,7 +48,6 @@ const useForm = (callback, validate) => {
                 if (isSubmitting) {
                     setSend(true);
                 }
-
             }
         },
         [errors]
