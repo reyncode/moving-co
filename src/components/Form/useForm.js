@@ -28,8 +28,6 @@ const useForm = (callback, validate) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        setErrors(validate(values));
-        setIsSubmitting(true);
 
         if (send) {
             emailjs.sendForm('service_5768qct', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
