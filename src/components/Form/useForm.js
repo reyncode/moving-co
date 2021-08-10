@@ -9,7 +9,7 @@ const useForm = (callback, validate) => {
     });
 
     const [errors, setErrors] = useState({});
-
+    const [send, setSend] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = e => {
@@ -22,22 +22,28 @@ const useForm = (callback, validate) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-
         setErrors(validate(values));
         setIsSubmitting(true);
 
-        // emailjs.sendForm('service_5768qct', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        if (send) {
+            emailjs.sendForm('service_5768qct', 'template_e2dp17r', e.target, 'user_4DgzViYlIVpJfyT1Ax5b3')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+            // e.target.reset();
+            callback();
+        }
     };
 
     useEffect(
         () => {
-            if (Object.keys(errors).length === 0 && isSubmitting) {
-                callback();
+            if (Object.keys(errors).length === 0) {
+                if (isSubmitting) {
+                    setSend(true);
+                }
+
             }
         },
         [errors]
