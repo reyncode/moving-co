@@ -12,13 +12,31 @@ const useForm = (callback, validate) => {
     const [send, setSend] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    // useEffect(
+    //     () => {
+    //         if (Object.keys(errors).length === 0 && isSubmitting) {
+    //             setSend(true);
+    //             callback();
+    //         }
+    //     },
+    //     [errors]
+    // );
+
     const handleChange = e => {
+
         const { name, value } = e.target;
         setValues({
             ...values,
             [name]: value
         });
     };
+
+    const handleClick = e => {
+        setErrors(validate(values));
+        setIsSubmitting(true);
+
+    };
+
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -32,7 +50,6 @@ const useForm = (callback, validate) => {
                 }, (error) => {
                     console.log(error.text);
                 });
-            // e.target.reset();
             callback();
         }
     };
@@ -49,7 +66,7 @@ const useForm = (callback, validate) => {
         [errors]
     );
 
-    return { handleChange, handleSubmit, values, errors };
+    return { handleChange, handleSubmit, values, errors, handleClick };
 };
 
 export default useForm;

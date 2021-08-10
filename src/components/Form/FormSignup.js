@@ -5,7 +5,7 @@ import './Form.css';
 
 
 const FormSignup = ({ submitForm }) => {
-    const { handleChange, handleSubmit, values, errors } = useForm(
+    const { handleChange, handleSubmit, values, errors, handleClick } = useForm(
         submitForm,
         validate
     );
@@ -52,7 +52,7 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <button className='form-input-btn' type='submit'>
+                <button className='form-input-btn' type='submit' onClick={handleClick}>
                     Send
                 </button>
             </form>
