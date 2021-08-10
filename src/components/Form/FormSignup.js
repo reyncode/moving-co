@@ -47,6 +47,7 @@ const FormSignup = ({ submitForm }) => {
                         className='form-input-message'
                         type='text'
                         name='message'
+                        placeholder='Please include pick up and drop off locations'
                         value={values.message}
                         onChange={handleChange}
                     />
