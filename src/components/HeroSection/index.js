@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import Video from '../../videos/taping-box2.mp4'
+import React, { useState, useEffect } from 'react'
 import {
     HeroContainer,
     HeroBg,
-    VideoBg,
+    ImgBg,
     HeroContent,
     HeroH1,
     HeroP,
@@ -11,19 +10,37 @@ import {
     ArrowForward,
     ArrowRight
 } from './HeroElements'
+
 import { Button } from '../ButtonElements'
+
+import desktopImage from '../../images/unloading-truck.jpg'
+import mobileImage from '../../images/handling-box.jpg'
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
-
     const onHover = () => {
         setHover(!hover)
     }
+    const imageUrl = window.innerWidth >= 1100 ? desktopImage : mobileImage;
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        }
+    }, [windowWidth]);
 
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                <ImgBg style={{ backgroundImage: `url(${imageUrl})` }} />
             </HeroBg>
             <HeroContent>
                 <HeroH1>From here to there</HeroH1>
