@@ -42,6 +42,7 @@
 .form-inputs {
   margin-bottom: 0.5rem;
   width: 80%;
+  max-width: 800px;
 }
 
 .form-inputs p {
@@ -85,6 +86,7 @@
 
 .form-input-btn {
   width: 80%;
+  max-width: 800px;
   height: 50px;
   margin-top: 10px;
   border-radius: 2px;
