@@ -8,7 +8,7 @@ export const aboutObject = {
     description1: 'We operate a fleet of Light Duty - Heavy Duty trucks & trailers, and utilize our strengths in logistics, planning, and industry connections to provide an effective and competitively priced transportation service to consumers and Small-Medium Sized businesses throughout select areas of Nova Scotia.',
     buttonLabel: 'Cargo Capabilities',
     imgStart: false,
-    img: require('../../images/svg-1.svg').default,
+    img: require('../../images/leaning-on-box.svg').default,
     alt: 'standing',
     dark: true,
     primary: true,
@@ -30,22 +30,10 @@ export const accommodationObject = {
     description5: 'Revolving business goods and freight on a schedule',
     buttonLabel: 'Delivery Options',
     imgStart: true,
-    img: require('../../images/svg-2.svg').default,
+    img: require('../../images/sitting-on-crate.svg').default,
     alt: 'cart',
     dark: true,
     primary: true,
     darkText: false,
     linkTo: 'solutions'
-};
-
-export const contactObject = {
-    id: 'contact',
-    lightBg: false,
-    headline: 'Contact Us',
-    imgStart: true,
-    img: require('../../images/email.svg').default,
-    alt: 'email',
-    buttonLabel: 'Submit',
-    dark: true,
-    primary: true
 };
