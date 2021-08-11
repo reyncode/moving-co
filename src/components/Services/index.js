@@ -28,7 +28,7 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
                     <ServicesH2>Scheduled</ServicesH2>
-                    <ServicesP>Scheduled transportation that can be booked up to 30 days in advance.</ServicesP>
+                    <ServicesP>Scheduled transportation booked up to 30 days in advance.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
             <ServicesCategory>How far?</ServicesCategory>
