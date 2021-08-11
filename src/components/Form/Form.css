@@ -39,6 +39,13 @@
   color: #fff;
 }
 
+.form-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
 .form-inputs {
   margin-bottom: 0.5rem;
   width: 80%;
@@ -51,13 +58,6 @@
   color: #f00e0e;
 }
 
-.form-label {
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-bottom: 6px;
-  color: #fff;
-}
-
 .form-input {
   display: block;
   padding-left: 10px;
@@ -66,6 +66,11 @@
   height: 40px;
   width: 100%;
   border: none;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
 }
 
 .form-input-message {
@@ -79,7 +84,7 @@
   border: none;
 }
 
-.form-input::placeholder {
+.form-input-message::placeholder {
   color: #595959;
   font-size: 12px;
 }
