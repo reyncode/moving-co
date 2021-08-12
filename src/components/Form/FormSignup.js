@@ -14,7 +14,7 @@ const FormSignup = ({ submitForm }) => {
         <div className='form-content-right'>
             <form onSubmit={handleSubmit} className='form' noValidate>
                 <h1 className='contact-header'>
-                    Send us a message below or call 902-221-8615!
+                    Send us a message below or call 902-221-8615
                 </h1>
                 <div className='form-inputs'>
                     <label className='form-label'>Full Name</label>

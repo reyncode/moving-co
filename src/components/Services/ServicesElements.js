@@ -55,6 +55,10 @@ export const ServicesCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 480px) {
+        max-height: 350px;
+    }
 `
 
 export const ServicesIcon = styled.img`
@@ -89,4 +93,10 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+    
+    @media screen and (max-width: 480px) {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
 `
