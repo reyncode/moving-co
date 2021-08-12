@@ -15,6 +15,8 @@ import {
     Img
 } from './InfoElements'
 
+import { ArrowRight } from './InfoElements'
+
 const InfoSection = ({
     lightBg,
     id,
@@ -45,11 +47,11 @@ const InfoSection = ({
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
-                                <Subtitle darkText={darkText}>{description1}</Subtitle>
-                                <Subtitle darkText={darkText}>{description2}</Subtitle>
-                                <Subtitle darkText={darkText}>{description3}</Subtitle>
-                                <Subtitle darkText={darkText}>{description4}</Subtitle>
-                                <Subtitle darkText={darkText}>{description5}</Subtitle>
+                                <Subtitle darkText={darkText} ><ArrowRight />{description1}</Subtitle>
+                                <Subtitle darkText={darkText}><ArrowRight />{description2}</Subtitle>
+                                <Subtitle darkText={darkText}><ArrowRight />{description3}</Subtitle>
+                                <Subtitle darkText={darkText}><ArrowRight />{description4}</Subtitle>
+                                <Subtitle darkText={darkText}><ArrowRight />{description5}</Subtitle>
                                 <BtnWrap>
                                     <Button to={linkTo}
                                         smooth={true}

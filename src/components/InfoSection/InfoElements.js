@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 export const InfoContainer = styled.div`
     color: #fff;
@@ -117,4 +118,8 @@ export const Img = styled.img`
     @media screen and (max-width: 360px) {
         display: none;
     }
+`
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-left: 8px;
+    font-size: 14px;
 `
