@@ -8,9 +8,11 @@ import {
     Column2,
     EmailIcon,
     PhoneIcon,
-    FacebookIcon
+    FacebookIcon,
+    Heading
 } from './PopoutElements'
 import { Button } from '../ButtonElements'
+import { headline } from './data';
 
 
 function Popout(props) {
@@ -24,9 +26,9 @@ function Popout(props) {
                         <FacebookIcon />
                     </Column1>
                     <Column2>
-                        <h2>conveniencetransportationhfx@gmail.com</h2>
-                        <h2>(902) 221-8615</h2>
-                        <h1>Convenience Transportation HFX</h1>
+                        <Heading />
+                        <Heading />
+                        <Heading />
                     </Column2>
                 </ContactInfo>
                 <BtnWrap>

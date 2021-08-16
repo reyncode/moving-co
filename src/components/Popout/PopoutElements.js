@@ -84,3 +84,9 @@ export const FacebookIcon = styled(RiFacebookCircleLine)`
     font-size: 55px;
     color: #fff;
 `
+
+export const Heading = styled.h1`
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+`
