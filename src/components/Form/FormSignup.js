@@ -27,7 +27,6 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.username && <p>{errors.username}</p>}
                 </div>
-
                 <div className='form-inputs'>
                     <label className='form-label'>Phone</label>
                     <input
@@ -39,7 +38,6 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.phone && <p>{errors.phone}</p>}
                 </div>
-
                 <div className='form-inputs'>
                     <label className='form-label'>Email</label>
                     <input
@@ -51,7 +49,6 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.email && <p>{errors.email}</p>}
                 </div>
-
                 <div className='form-inputs'>
                     <label className='form-label'>Message</label>
                     <textarea
