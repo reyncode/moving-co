@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com'
 const useForm = (callback, validate) => {
     const [values, setValues] = useState({
         username: '',
+        phone: '',
         email: '',
         message: ''
     });
