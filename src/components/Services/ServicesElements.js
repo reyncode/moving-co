@@ -1,31 +1,16 @@
 import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
-    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #010606;
-
-    // @media screen and (max-width: 768px) {
-    //     height: 1600px;
-    // }
-
-    // @media screen and (max-width: 480px) {
-    //     height: 1650px;
-    // }
-
-    // @media screen and (max-width: 360px) {
-    //     height: 1500px;
-    // }
 `
 export const ServicesWrapper = styled.div`
     max-width: 1000px;
-    // height: 100vh;
     margin: 0 auto;
     display: grid;
-    // grid-auto-columns: minmax(auto, 2fr);
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
