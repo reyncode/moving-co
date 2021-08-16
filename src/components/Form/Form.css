@@ -98,7 +98,6 @@
 }
 
 .form-content-right {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -111,10 +110,36 @@
   font-size: 24px;
   margin-top: 400px;
   color: #fff;
-  
 }
 
 .success-icon {
   height: 30%;
   margin-top: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form-content-right {
+    height: 100vh;
+   }
+ 
+   .form-success {
+     margin-top: 250px;
+   }
+   
+   .success-icon {
+     margin-top: 50px;
+   }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .form-success {
+    font-size: 18px;
+    margin-top: 275px;
+  }
+  
+  .success-icon {
+    height: 20%;
+  }
 }
