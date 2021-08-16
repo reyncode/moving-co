@@ -65,6 +65,7 @@
 .form-input-message {
   display: block;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 5px;
   outline: none;
   border-radius: 2px;
