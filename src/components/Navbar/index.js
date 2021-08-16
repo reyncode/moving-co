@@ -71,13 +71,13 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='contact'
+                        <NavBtnLink to='quote'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
                             offset={-80}
-                        >Contact</NavBtnLink>
+                        >Quote</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

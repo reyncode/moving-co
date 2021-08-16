@@ -13,7 +13,7 @@ const Form = () => {
 
     return (
         <>
-            <div className='form-container' id='contact'>
+            <div className='form-container' id='quote'>
                 {!isSubmitted ? (
                     <FormSignup submitForm={submitForm} />
                 ) : (
