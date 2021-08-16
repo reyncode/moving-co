@@ -14,7 +14,7 @@ const FormSignup = ({ submitForm }) => {
         <div className='form-content-right'>
             <form onSubmit={handleSubmit} className='form' noValidate>
                 <h1 className='contact-header'>
-                    Send us a message below or call 902-221-8615
+                    To receive a free quote, fill out the form below.
                 </h1>
                 <div className='form-inputs'>
                     <label className='form-label'>Full Name</label>
@@ -22,7 +22,6 @@ const FormSignup = ({ submitForm }) => {
                         className='form-input'
                         type='text'
                         name='username'
-                        placeholder='Enter your full name'
                         value={values.username}
                         onChange={handleChange}
                     />
@@ -34,7 +33,6 @@ const FormSignup = ({ submitForm }) => {
                         className='form-input'
                         type='text'
                         name='email'
-                        placeholder='Enter your email'
                         value={values.email}
                         onChange={handleChange}
                     />
