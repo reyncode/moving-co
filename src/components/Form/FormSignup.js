@@ -28,6 +28,17 @@ const FormSignup = ({ submitForm }) => {
                     {errors.username && <p>{errors.username}</p>}
                 </div>
                 <div className='form-inputs'>
+                    <label className='form-label'>Phone</label>
+                    <input
+                        className='form-input'
+                        type='tel'
+                        name='phone'
+                    // value={values.email}
+                    // onChange={handleChange}
+                    />
+                    {errors.email && <p>{errors.email}</p>}
+                </div>
+                <div className='form-inputs'>
                     <label className='form-label'>Email</label>
                     <input
                         className='form-input'
@@ -38,14 +49,13 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.email && <p>{errors.email}</p>}
                 </div>
-
                 <div className='form-inputs'>
                     <label className='form-label'>Message</label>
                     <textarea
                         className='form-input-message'
                         type='text'
                         name='message'
-                        placeholder='Please include a description of the freight, date & time , pickup & dropoff address and a contact number'
+                        placeholder='Please include a description of the freight, date, time and pickup & dropoff addresses.'
                         value={values.message}
                         onChange={handleChange}
                     />
