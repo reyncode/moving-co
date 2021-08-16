@@ -7,6 +7,7 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
+    NavPopout,
     NavBtn,
     NavBtnLink
 } from './NavbarElements';
@@ -39,59 +40,70 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={toggleHome}>Convenience Transportation HFX</NavLogo>
+                    <NavLogo
+                        to='/'
+                        onClick={toggleHome}>
+                        Convenience Transportation HFX
+                    </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'
+                            <NavLinks
+                                to='about'
                                 smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact='true'
-                                offset={-80}
-                            >About</NavLinks>
+                                offset={-80}>
+                                About
+                            </NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to='accommodation'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact='true'
-                                offset={-80}
-                            >Cargo</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='solutions'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact='true'
-                                offset={-80}
-                            >Solutions</NavLinks>
-                        </NavItem>
-
                         <NavItem>
                             <NavLinks
-                                to='/'
-                                onClick={() => setButtonPopout(true)}>
-
-                                <Popout trigger={buttonPopout} setTrigger={setButtonPopout}>
-
-                                </Popout>
-                                Contact</NavLinks>
+                                to='accommodation'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
+                                Cargo
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks
+                                to='solutions'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
+                                Solutions
+                            </NavLinks>
                         </NavItem>
 
+                        <NavItem>
+                            <NavPopout
+                                to='/'
+                                onClick={() => setButtonPopout(true)}>
+                                <Popout
+                                    trigger={buttonPopout}
+                                    setTrigger={setButtonPopout} />
+                                Contact
+                            </NavPopout>
+                        </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='quote'
+                        <NavBtnLink
+                            to='quote'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}
-                        >Quote</NavBtnLink>
+                            offset={-80}>
+                            Quote
+                        </NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

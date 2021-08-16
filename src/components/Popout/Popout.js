@@ -12,7 +12,7 @@ import {
     Heading
 } from './PopoutElements'
 import { Button } from '../ButtonElements'
-import { headline } from './data';
+// import { headline } from './data';
 
 
 function Popout(props) {
