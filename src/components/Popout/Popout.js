@@ -9,11 +9,9 @@ import {
     EmailIcon,
     PhoneIcon,
     FacebookIcon,
-    Heading
+    Heading,
+    CloseButton
 } from './PopoutElements'
-import { Button } from '../ButtonElements'
-// import { headline } from './data';
-
 
 function Popout(props) {
     return (props.trigger) ? (
@@ -26,14 +24,15 @@ function Popout(props) {
                         <FacebookIcon />
                     </Column1>
                     <Column2>
-                        <Heading />
-                        <Heading />
-                        <Heading />
+                        <Heading>conveniencetransportationhfx@gmail.com</Heading>
+                        <Heading>902 221 8615</Heading>
+                        <Heading>Convenience Transportation HFX</Heading>
                     </Column2>
                 </ContactInfo>
                 <BtnWrap>
-                    <Button onClick={() => props.setTrigger(false)}
-                    >Close</Button>
+                    <CloseButton onClick={() => props.setTrigger(false)}>
+                        Close
+                    </CloseButton>
                     {props.children}
                 </BtnWrap>
             </PopoutWrapper>

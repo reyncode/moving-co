@@ -13,7 +13,7 @@ import {
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll'
-import Popout from '../Popout/Popout';
+// import Popout from '../Popout/Popout';
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -85,11 +85,11 @@ const Navbar = ({ toggle }) => {
 
                         <NavItem>
                             <NavPopout
-                                to='/'
+                                to='contact'
                                 onClick={() => setButtonPopout(true)}>
-                                <Popout
+                                {/* <Popout
                                     trigger={buttonPopout}
-                                    setTrigger={setButtonPopout} />
+                                    setTrigger={setButtonPopout} /> */}
                                 Contact
                             </NavPopout>
                         </NavItem>

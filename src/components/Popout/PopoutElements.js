@@ -17,15 +17,17 @@ export const PopoutContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: initial;
 `
 
 export const PopoutWrapper = styled.div`
     position: relative;
-    padding: 32px;
+    padding: 5px;
     width: 100%;
     height: 100%;
-    max-width: 640px;
-    max-height: 320px;
+    max-width: 600px;
+    max-height: 265px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 12px 15px rgba(0,0,0,0.3);
@@ -33,7 +35,6 @@ export const PopoutWrapper = styled.div`
 
 export const ContactInfo = styled.div`
     display: grid;
-    // grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: 'col1 col2';
 
@@ -44,13 +45,11 @@ export const ContactInfo = styled.div`
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    // grid-area: col3;
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    // grid-area: col1;
 `
 
 export const BtnWrap = styled.div`
@@ -58,7 +57,8 @@ export const BtnWrap = styled.div`
     display: flex;
     justify-content: center;
     
-    padding-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     @media screen and (max-width: 480px) {
         
@@ -68,25 +68,56 @@ export const EmailIcon = styled(HiOutlineMail)`
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 55px;
-    color: #fff;
+    color: #de6464;
 `
 
 export const PhoneIcon = styled(BsPhone)`
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 55px;
-    color: #fff;
+    color: #de6464;
 `
 
 export const FacebookIcon = styled(RiFacebookCircleLine)`
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 55px;
-    color: #fff;
+    color: #de6464;
 `
 
-export const Heading = styled.h1`
-    font-size: 26px;
-    font-weight: 600;
+export const Heading = styled.p`
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
     color: #fff;
+`
+export const CloseButton = styled.button`
+    border-radius: 10px;
+    background: #de6464;
+    white-space: nowrap;
+    padding: 12px 48px;
+    width: 100%;
+    color: #010606;
+    font-size: 1rem;
+    
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+    }
 `
