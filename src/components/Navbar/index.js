@@ -7,17 +7,14 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    NavPopout,
     NavBtn,
     NavBtnLink
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll'
-// import Popout from '../Popout/Popout';
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
-    const [buttonPopout, setButtonPopout] = useState(false);
 
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -84,14 +81,15 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
 
                         <NavItem>
-                            <NavPopout
+                            <NavLinks
                                 to='contact'
-                                onClick={() => setButtonPopout(true)}>
-                                {/* <Popout
-                                    trigger={buttonPopout}
-                                    setTrigger={setButtonPopout} /> */}
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
                                 Contact
-                            </NavPopout>
+                            </NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
