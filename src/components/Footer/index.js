@@ -24,7 +24,7 @@ const Footer = () => {
                         <FooterLinkItem>
                             <FooterLinkTitle>How to reach us</FooterLinkTitle>
                             <FooterLink to='/'>conveniencetransportationhfx@gmail.com</FooterLink>
-                            <FooterLink to='/'>902 221 8615</FooterLink>
+                            <FooterLink to='/'>902 580 6116</FooterLink>
                             <FooterLinkFacebook
                                 target='_blank'
                                 href='https://www.facebook.com/Convenience-Transportation-HFX-104663961918238'>
