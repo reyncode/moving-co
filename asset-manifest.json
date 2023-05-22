@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/moving-co/static/css/main.14f7d121.chunk.css",
+    "main.js": "/moving-co/static/js/main.a1f90e40.chunk.js",
+    "main.js.map": "/moving-co/static/js/main.a1f90e40.chunk.js.map",
+    "runtime-main.js": "/moving-co/static/js/runtime-main.b5829482.js",
+    "runtime-main.js.map": "/moving-co/static/js/runtime-main.b5829482.js.map",
+    "static/js/2.f5923b50.chunk.js": "/moving-co/static/js/2.f5923b50.chunk.js",
+    "static/js/2.f5923b50.chunk.js.map": "/moving-co/static/js/2.f5923b50.chunk.js.map",
+    "index.html": "/moving-co/index.html",
+    "static/css/main.14f7d121.chunk.css.map": "/moving-co/static/css/main.14f7d121.chunk.css.map",
+    "static/js/2.f5923b50.chunk.js.LICENSE.txt": "/moving-co/static/js/2.f5923b50.chunk.js.LICENSE.txt",
+    "static/media/drone-delivery.99446510.svg": "/moving-co/static/media/drone-delivery.99446510.svg",
+    "static/media/email-confirmed.db80e432.svg": "/moving-co/static/media/email-confirmed.db80e432.svg",
+    "static/media/handling-box.be5c5229.jpg": "/moving-co/static/media/handling-box.be5c5229.jpg",
+    "static/media/leaning-on-box.svg": "/moving-co/static/media/leaning-on-box.1b08cf51.svg",
+    "static/media/long-haul.f1039957.svg": "/moving-co/static/media/long-haul.f1039957.svg",
+    "static/media/schedule-delivery.348c6e43.svg": "/moving-co/static/media/schedule-delivery.348c6e43.svg",
+    "static/media/short-haul.b226f957.svg": "/moving-co/static/media/short-haul.b226f957.svg",
+    "static/media/sitting-on-crate.svg": "/moving-co/static/media/sitting-on-crate.24a19f49.svg",
+    "static/media/unloading-truck.a4023380.jpg": "/moving-co/static/media/unloading-truck.a4023380.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5829482.js",
+    "static/js/2.f5923b50.chunk.js",
+    "static/css/main.14f7d121.chunk.css",
+    "static/js/main.a1f90e40.chunk.js"
+  ]
+}
