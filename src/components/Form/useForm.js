@@ -30,8 +30,8 @@ const useForm = (callback, validate) => {
     const handleSubmit = e => {
         e.preventDefault();
 
-        if (send) {
-            emailjs.sendForm('service_0q7oxtg', 'template_oqsjdiq', e.target, 'user_rUlCDCDi3MkcQ5agmVWcF')
+        if (send) { // don't send to user
+            emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', e.target, 'PUBLIC_KEY')
                 .then((result) => {
                     console.log(result.text);
                 }, (error) => {

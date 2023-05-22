@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
                     <NavLogo
                         to='/'
                         onClick={toggleHome}>
-                        Convenience Transportation HFX
+                        MovingCo
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
